@@ -3,14 +3,96 @@
   <head>
     <meta charset="utf-8">
     <title>Lanwiz-About Us</title>
-    <link rel="stylesheet" href="./lanwiz_about.css">
+    <link rel="stylesheet" href="./css/lanwiz_about.css">
+    <link rel="stylesheet" href="./css/lanwiz_login.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/about_rwd.css">
+
+
 
 
   </head>
 
   <body>
+    <script src="./bootstrap/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/popper/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <div class="video_placeholder">
+        <video id="the_video" autoplay="autoplay" loop="loop"
+            allowfullscreen="true" frameborder="0" preload="auto" muted>
+                <source src="./video/hiking.mp4" type="video/mp4">
+        </video>
+        <div class="about-cover">
+                <h1>
+                    We Just Wanted to Do More.
+                </h1>
+        </div>
+        <!-- below is top header (logo, navlist-left, and navlist-right) -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo"><img class="menu-logo" src="./picture/logo-white.png"></div>
+            <ul id="menuUl" class="active">
+                <li><a class="btn_modal">Log in</a></li>
+                <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
+                <li> <a href="./lanwiz_blog2.html" class="link_style">Blog</a></li>
+                <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
+                <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
+            </ul>
+        </nav>
+
+        <script src="./js/lanwiz_index.js"></script>
+        <div class="overlay">
+            <article>
+                <div class="login_page">
+                    <div id="container1">
+
+                      <div class="login">  
+                        <h3>Log in</h3>
+                        <form action="用戶管理.php">
+                          <input type="text" id="username" name="username" placeholder="Account" required>
+                          <div class="tab"></div>
+                          <input type="text" id="password" name="password" placeholder="Password" required>
+                          <div class="tab"></div>
+                          <input type="submit" value="Log in" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+                        </form>
+                        <h5 onclick="show_hide()">Sign up</h5>
+                      </div><!-- login end-->
+                    </div><!-- container1 end-->
+                  </div><!-- login_page end-->
+                  <div class="signup_page">
+                    <div id="container2">
+                      <div class="signup">  
+                        <h3>Sign Up</h3>
+                        <form action="用戶管理.php">
+                          <input type="text" id="fullname" name="fullname" placeholder="User Name" required>
+                          <div class="tab"></div>
+                          <input type="text" id="username2" name="username" placeholder="Account" required>
+                          <div class="tab"></div>
+                          <input type="text" id="password2" name="password" placeholder="Password" required>
+                          <div class="tab"></div>
+                          <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Re-enter Password" required>
+                          <div class="tab"></div>            
+                          <input type="submit" value="Sign up" class="submit">
+                        </form>  
+              
+                        <h5 onclick="show_hide()">Log in</h5>
+                        
+                      </div><!-- signup end-->
+                    </div><!-- container2 end-->
+                  </div><!-- signup_page end--> 
+              
+                  <div id="copyright">
+                    <h4>Copyright © 2020 ChingLin All rights reserved</h4><!--因為js，會跑版--> 
+                  </div>    
+                <button type="button" class="btn_modal_close">Close</button>
+            </article>
+            </div>
+        
+            <script src="./js/lanwiz_login.js"></script>
+        </div>
+    </div>
+    <!-- <div class="video_placeholder">
         <video id="the_video" autoplay="autoplay" loop="loop"
             allowfullscreen="true" frameborder="0" preload="auto" muted>
                 <source src="./video/hiking.mp4" type="video/mp4">
@@ -72,7 +154,9 @@
         </header>
     
    
-    </div>
+    </div> -->
+
+
 
     <div class="our-story-hero-body-container">
         <div class="vision">
@@ -99,286 +183,266 @@
         </div>
     </div>       
         
-    <div class="homepage-teachers-slider">
-
-        <div class="homepage-teacher-slider">
-            <div class=homepage-teacher-item>
-                <article class="card">
-                    <a href="#" class="img_block">
-                        <img  src="./picture/icon/email.png">
-                    </a>
-                    <div class="content_block">
-                        <h1>Help</h1>
-                        <p>Reach customer support by sending a message to the “Lanwiz Team" account inside the Lanwiz app. Or, you can email us at support@lanwiz.com.
 
 
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class=homepage-teacher-item>
-                <article class="card">
-                    <a href="#" class="img_block">
-                        <img src="./picture/icon/handshake.png">
-                    </a>
-                    <div class="content_block">
-                        <h1>Business</h1>
-                        <p>You can reach us at hi@lanwiz.com for press, partnerships, and any other general inquiries. We'd love to hear from you!
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class=homepage-teacher-item>
-                <article class="card">
-                    <a href="#" class="img_block">
-                        <img  src="./picture/icon/curriculum.png" >
-                    </a>
-                    <div class="content_block">
-                        <h1>Join Us</h1>
-                        <p>Want to help build the world's largest social language learning platform? We're looking for talented new team members in Taiwan and worldwide.
-                        </p>
-                    </div>
-                </article>
-            </div>
+     <div class="service-slider">
+        <div class="service-slide-item">
+            <article class="card">
+                <a href="#" class="img_block">
+                    <img  src="./picture/icon/email.png">
+                </a>
+                <div class="content_block">
+                    <h1>Help</h1>
+                    <p>Reach customer support by sending a message to the “Lanwiz Team" account inside the Lanwiz app. Or, you can email us at support@lanwiz.com.
+
+
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="service-slide-item">
+            <article class="card">
+                <a href="#" class="img_block">
+                    <img src="./picture/icon/handshake.png">
+                </a>
+                <div class="content_block">
+                    <h1>Business</h1>
+                    <p>You can reach us at hi@lanwiz.com for press, partnerships, and any other general inquiries. We'd love to hear from you!
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="service-slide-item">
+            <article class="card">
+                <a href="#" class="img_block">
+                    <img  src="./picture/icon/curriculum.png" >
+                </a>
+                <div class="content_block">
+                    <h1>Join Us</h1>
+                    <p>Want to help build the world's largest social language learning platform? We're looking for talented new team members in Taiwan and worldwide.
+                    </p>
+                </div>
+            </article>
+        </div>
     </div>
 
-   
-
-        <section id="mid" class="wrapper style">         
-            <div class="inner">
-                <header class="align-center">
-
-                    <div class="h1-foot">
-                        <h1 class="foot">Learn More than Just a Language.</h1>
-                        <p class="foot2">On Lanwiz it’s about mastering a timeless skill, cultivating new perspectives, and connecting with fascinating people from around the world.</p>
-                    </div>     
-                    <div class="get-started-btn-container"> 
-                        <a href="#">
-                            <div class="get-started-btn">
-                                <span class="get-started">Get Started!</span>
-                            </div>
-                        </a>
-                    </div>       
-               
-                </header>
+     <!--  wrapper -->
+     <section class="wrapper-style">
+        <div class="foot">
+            <h1 class="foot1">Learn More than Just a Language.</h1>
+            <p class="foot2">On Lanwiz it’s about mastering a timeless skill, cultivating new perspectives, and connecting with fascinating people from around the world.</p>
+        </div>
+        <div class="get-started-btn-container"> 
+            <a href="#">
+                <div class="get-started-btn">
+                    <span class="get-started">Get Started!</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-part1">
+            <div class="language-container">
+                <section class="footer-language">
+                    <h3> Languages</h3>
+                </section>
+                <ul>
+                    <li>
+                        <span>English</span>
+                    </li>
+                    <li>
+                        <span>Spanish</span>
+                    </li>
+                    <li>
+                        <span>Chinese (Mandarin)</span>
+                    </li>
+                    <li>
+                        <span>Português</span>
+                    </li>
+                    <li>
+                        <span>German</span>
+                    </li>
+                    <li>
+                        <span>Japanese</span>
+                    </li>
+                    <li>
+                        <span>Korean</span>
+                    </li>
+                    <li>
+                        <span>French</span>
+                    </li>
+                    <li>
+                        <span>Italian</span>
+                    </li>
+                    <li>
+                        <span>Russian</span>
+                    </li>
+                    <li>
+                        <span>Thai</span>
+                    </li>
+                    <li>
+                        <span>Vietnamese</span>
+                    </li>
+                    <li>
+                        <span>Others</span>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <footer>
-            <div class="footer-part1">
-                <div class="language-container">
-                    <section class="footer-language">
-                        <h3> Languages</h3><br>
-                    </section>
-                    <ul>
-                        <li>
-                            <span>English</span>
-                        </li>
-                        <li>
-                            <span>Spanish</span>
-                        </li>
-                        <li>
-                            <span>Chinese (Mandarin)</span>
-                        </li>
-                        <li>
-                            <span>Português</span>
-                        </li>
-                        <li>
-                            <span>German</span>
-                        </li>
-                        <li>
-                            <span>Japanese</span>
-                        </li>
-                        <li>
-                            <span>Korean</span>
-                        </li>
-                        <li>
-                            <span>French</span>
-                        </li>
-                        <li>
-                            <span>Italian</span>
-                        </li>
-                        <li>
-                            <span>Russian</span>
-                        </li>
-                        <li>
-                            <span>Thai</span>
-                        </li>
-                        <li>
-                            <span>Vietnamese</span>
-                        </li>
-                        <li>
-                            <span>Others</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="language-container">
-                    <section class="footer-language">
-                        <h3> Local Lanwiz Partner</h3><br>
-                    </section>
-                    <ul>
-                        <li>
-                            <span>Taiwan</span>
-                        </li>
-                        <li>
-                            <span>Japan</span>
-                        </li>
-                        <li>
-                            <span>Korea</span>
-                        </li>
-                        <li>
-                            <span>China</span>
-                        </li>
-                        <li>
-                            <span>Australia</span>
-                        </li>
-                        <li>
-                            <span>New Zealand</span>
-                        </li>
-                        <li>
-                            <span>Germany</span>
-                        </li>
-                        <li>
-                            <span>France</span>
-                        </li>
-                        <li>
-                            <span>Belgium</span>
-                        </li>
-                        <li>
-                            <span>Netherlands</span>
-                        </li>
-                        <li>
-                            <span>Spain</span>
-                        </li>
-                        <li>
-                            <span>Italy</span>
-                        </li>
-                        <li>
-                            <span>Portugal</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="language-container">
-                    <section class="footer-language">
-                        <h3> <br></h3><br>
-                    </section>
-                    <ul>
-                        <li>
-                            <span>Greece</span>
-                        </li>
-                        <li>
-                            <span>Sweden</span>
-                        </li>
-                        <li>
-                            <span>United Kingdom</span>
-                        </li>
-                        <li>
-                            <span>Denmark</span>
-                        </li>
-                        <li>
-                            <span>Norway</span>
-                        </li>
-                        <li>
-                            <span>Switzerland</span>
-                        </li>
-                        <li>
-                            <span>Luxembourg</span>
-                        </li>
-                        <li>
-                            <span>Ireland</span>
-                        </li>
-                        <li>
-                            <span>India</span>
-                        </li>
-                        <li>
-                            <span>Malaysia</span>
-                        </li>
-                        <li>
-                            <span>Thailand</span>
-                        </li>
-                        <li>
-                            <span>Singapore</span>
-                        </li>
-                        <li>
-                            <span>Indonasia</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="language-container">
-                    <section class="footer-language">
-                        <h3> <br></h3><br>
-                    </section>
-                    <ul>
-                        <li>
-                            <span>Vietnam</span>
-                        </li>
-                        <li>
-                            <span>United State</span>
-                        </li>
-                        <li>
-                            <span>Russia</span>
-                        </li>
-                        <li>
-                            <span>Canada</span>
-                        </li>
-                        <li>
-                            <span>Argentina</span>
-                        </li>
-                        <li>
-                            <span>Finland</span>
-                        </li>
-                        <li>
-                            <span>Mexico</span>
-                        </li>
-                        <li>
-                            <span>Philippines</span>
-                        </li>
-                        <li>
-                            <span>United Arab Emirates</span>
-                        </li>
-                        <li>
-                            <span>Turkey</span>
-                        </li>
-                        <li>
-                            <span>Czech</span>
-                        </li>
-                        <li>
-                            <span>Israel</span>
-                        </li>
-                        <li>
-                            <span>Others</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="language-container">
+                <section class="footer-language">
+                    <h3> Local Partner</h3>
+                </section>
+                <ul>
+                    <li>
+                        <span>Taiwan</span>
+                    </li>
+                    <li>
+                        <span>Japan</span>
+                    </li>
+                    <li>
+                        <span>Korea</span>
+                    </li>
+                    <li>
+                        <span>China</span>
+                    </li>
+                    <li>
+                        <span>Australia</span>
+                    </li>
+                    <li>
+                        <span>New Zealand</span>
+                    </li>
+                    <li>
+                        <span>Germany</span>
+                    </li>
+                    <li>
+                        <span>France</span>
+                    </li>
+                    <li>
+                        <span>Belgium</span>
+                    </li>
+                    <li>
+                        <span>Netherlands</span>
+                    </li>
+                    <li>
+                        <span>Spain</span>
+                    </li>
+                    <li>
+                        <span>Italy</span>
+                    </li>
+                    <li>
+                        <span>Portugal</span>
+                    </li>
+                </ul>
             </div>
-            
-            <!-- <div class="footer-part2">
-                <div class="bottom-box">
-                    <ul>
-                        <li>About</li>
-                        <li>Careers</li>
-                        <li>Press</li>
-                        <li>Blog</li>
-                        <li>Support</li>
-                        <li>Legal</li>
-                        <li>Pravacy</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-
-            </div> -->
-
-            <div class="footer-icon">
-                <img class="footer-simple-img" src="./picture/icon/facebook.png" alt="Facebook" width="25" height="25">
-                <img class="footer-simple-img" src="./picture/icon/twitter.png" alt="twitter" width="25" height="25">
-                <img class="footer-simple-img" src="./picture/icon/instagram.png" alt="instagram" width="25" height="25">
-                <img class="footer-simple-img" src="./picture/icon/youtube.png" alt="youtube" width="25" height="25">
-                <img class="footer-simple-img" src="./picture/icon/wechat.png" alt="wechat" width="25" height="25">
+            <div class="language-container">
+                <section class="footer-language">
+                    <h3> Local Partner</h3>
+                </section>
+                <ul>
+                    <li>
+                        <span>Greece</span>
+                    </li>
+                    <li>
+                        <span>Sweden</span>
+                    </li>
+                    <li>
+                        <span>United Kingdom</span>
+                    </li>
+                    <li>
+                        <span>Denmark</span>
+                    </li>
+                    <li>
+                        <span>Norway</span>
+                    </li>
+                    <li>
+                        <span>Switzerland</span>
+                    </li>
+                    <li>
+                        <span>Luxembourg</span>
+                    </li>
+                    <li>
+                        <span>Ireland</span>
+                    </li>
+                    <li>
+                        <span>India</span>
+                    </li>
+                    <li>
+                        <span>Malaysia</span>
+                    </li>
+                    <li>
+                        <span>Thailand</span>
+                    </li>
+                    <li>
+                        <span>Singapore</span>
+                    </li>
+                    <li>
+                        <span>Indonasia</span>
+                    </li>
+                </ul>
             </div>
-        </footer>
-
-       
-    </div>
-  </body>
+            <div class="language-container">
+                <section class="footer-language">
+                    <h3> Local Partner</h3>
+                </section>
+                <ul>
+                    <li>
+                        <span>Vietnam</span>
+                    </li>
+                    <li>
+                        <span>United State</span>
+                    </li>
+                    <li>
+                        <span>Russia</span>
+                    </li>
+                    <li>
+                        <span>Canada</span>
+                    </li>
+                    <li>
+                        <span>Argentina</span>
+                    </li>
+                    <li>
+                        <span>Finland</span>
+                    </li>
+                    <li>
+                        <span>Mexico</span>
+                    </li>
+                    <li>
+                        <span>Philippines</span>
+                    </li>
+                    <li>
+                        <span>United Arab Emirates</span>
+                    </li>
+                    <li>
+                        <span>Turkey</span>
+                    </li>
+                    <li>
+                        <span>Czech</span>
+                    </li>
+                    <li>
+                        <span>Israel</span>
+                    </li>
+                    <li>
+                        <span>Others</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-icon">
+            <img class="footer-simple-img" src="./picture/icon/facebook.png" alt="Facebook" width="25" height="25">
+            <img class="footer-simple-img" src="./picture/icon/twitter.png" alt="twitter" width="25" height="25">
+            <img class="footer-simple-img" src="./picture/icon/instagram.png" alt="instagram" width="25" height="25">
+            <img class="footer-simple-img" src="./picture/icon/youtube.png" alt="youtube" width="25" height="25">
+            <img class="footer-simple-img" src="./picture/icon/wechat.png" alt="wechat" width="25" height="25">
+        </div>
+     
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    
+    
+</div>
+</body>
 
 
 </html>

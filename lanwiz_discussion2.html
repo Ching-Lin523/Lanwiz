@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Lanwiz-Exchange</title>
     <link rel="stylesheet" href="./css/lanwiz_discussion2.css">
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/lanwiz_login.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -28,18 +30,13 @@
         <!-- below is top header (logo, navlist-left, and navlist-right) -->
         <nav class="menu">
             <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-            <div class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></div>
-            <div class="language-switch">
-              <h1>English</h1>
-              <span class="triangle1"></span>
-            </div>
-            
+            <a href="./lanwiz_index.html" class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></a>
             <ul id="menuUl" class="active">
-              <li><a>Log in</a></li>
+                <li><a class="btn_modal">Log in</a></li>
                 <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
-               <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
-              <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
-                <li class="current-active"><a href="./lanwiz_exchange.html" class="link_style">Find a Partner</a></li>
+                <li> <a href="./lanwiz_blog2.html" class="link_style">Blog</a></li>
+                <li><a href="./lanwiz_discussion2.html" class="link_style">Discussion</a></li>
+                <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
             </ul>
         </nav>
         <nav class="menu2">
@@ -58,9 +55,55 @@
                 <input id="search-partner-skills" placeholder="Name or Keywords..." value>
             </div>
         </nav>
+    
+          <script src="./js/lanwiz_discussion.js"></script>
+          <div class="overlay">
+              <article>
+                  <div class="login_page">
+                      <div id="container1">
+    
+                        <div class="login">  
+                          <h3>Log in</h3>
+                          <form action="用戶管理.php">
+                            <input type="text" id="username" name="username" placeholder="Account" required>
+                            <div class="tab"></div>
+                            <input type="text" id="password" name="password" placeholder="Password" required>
+                            <div class="tab"></div>
+                            <input type="submit" value="Log in" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+                          </form>
+                          <h5 onclick="show_hide()">Sign up</h5>
+                        </div><!-- login end-->
+                      </div><!-- container1 end-->
+                    </div><!-- login_page end-->
+                    <div class="signup_page">
+                      <div id="container2">
+                        <div class="signup">  
+                          <h3>Sign Up</h3>
+                          <form action="用戶管理.php">
+                            <input type="text" id="fullname" name="fullname" placeholder="User Name" required>
+                            <div class="tab"></div>
+                            <input type="text" id="username2" name="username" placeholder="Account" required>
+                            <div class="tab"></div>
+                            <input type="text" id="password2" name="password" placeholder="Password" required>
+                            <div class="tab"></div>
+                            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Re-enter Password" required>
+                            <div class="tab"></div> 
+                            <input type="submit" value="Sign up" class="submit">
+                          </form>  
+                          <h5 onclick="show_hide()">Log in</h5>
+                        </div><!-- signup end-->
+                      </div><!-- container2 end-->
+                    </div><!-- signup_page end--> 
+                    <div id="copyright">
+                      <h4>Copyright © 2020 ChingLin All rights reserved</h4><!--因為js，會跑版--> 
+                    </div>    
+                  <button type="button" class="btn_modal_close">Close</button>
+              </article>
+              </div>
+
+              <script src="./js/lanwiz_login.js"></script>
 
 
-        <script src="./js/lanwiz_exchange2.js"></script>
 
     </div>
 
@@ -73,191 +116,205 @@
         <div class="cards">
             <div class="cards-left">
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher1.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher1.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Essay: Do you agree or disagree?</span><span class="title-none">Parents are the best teacher.</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>55 minutes ago</span>
+                            </h3>
+                            <p>
+                                it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content...
+                            </p>
+                            <h3 class="read-more">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>
                         <div class="light">
                             <span>Open</span>
                         </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Essay: Do you agree or disagree?Parents are the best teacher.</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>20 minutes ago</span>
-                        </h3>
-                        <p>
-                            it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content...
-                        </p>
-                        <h3 class="read-more">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
                     </div>
                 </div> 
 
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher2.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher2.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Can someone check my pronunciation? Thanks!</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>47 minutes ago</span>
+                            </h3>
+                            <div class=voice-container>
+                                <span class="progress" style="width: 10%;"></span>
+                                <span class="second">32"</span>
+                                <div class="voice-circle">
+                                    <span class="triangle1"></span>
+                                </div>
+                            </div>
+                            <h3 class="read-more" id="read-more-voice">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>
                         <div class="light" id="light-closed">
                             <span>Closed</span>
                         </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Can someone check my pronunciation? Thanks!</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>47 minutes ago</span>
-                        </h3>
-                        <div class=voice-container>
-                            <span class="progress" style="width: 10%;"></span>
-                            <span class="second">32"</span>
-                            <div class="voice-circle">
-                                <span class="triangle1"></span>
-                            </div>
-                        </div>
-                        <h3 class="read-more" id="read-more-voice">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                    </div>
+                    </div>    
                 </div> 
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher3.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher3.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Essay: Do you agree or disagree?</span><span class="title-none">Parents are the best teacher.</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>2 hours ago</span>
+                            </h3>
+                            <p>
+                                it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
+                            </p>
+                            <h3 class="read-more">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>
                         <div class="light">
                             <span>Open</span>
                         </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Essay: Do you agree or disagree?Parents are the best teacher.</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>20 minutes ago</span>
-                        </h3>
-                        <p>
-                            it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
-                        </p>
-                        <h3 class="read-more">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                    </div>
+                    </div>    
                 </div> 
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher4.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher4.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Essay: Do you agree or disagree?</span><span class="title-none">Parents are the best teacher.</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>3 hours ago</span>
+                            </h3>
+                            <p>
+                                it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
+                            </p>
+                            <h3 class="read-more">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>
                         <div class="light">
                             <span>Open</span>
                         </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Essay: Do you agree or disagree?Parents are the best teacher.</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>20 minutes ago</span>
-                        </h3>
-                        <p>
-                            it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
-                        </p>
-                        <h3 class="read-more">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                    </div>
+                    </div>    
                 </div> 
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher5.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher5.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Essay: Do you agree or disagree?</span><span class="title-none">Parents are the best teacher.</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>3 hours ago</span>
+                            </h3>
+                            <p>
+                                it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
+                            </p>
+                            <h3 class="read-more">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>  
                         <div class="light">
                             <span>Open</span>
-                        </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Essay: Do you agree or disagree?Parents are the best teacher.</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>20 minutes ago</span>
-                        </h3>
-                        <p>
-                            it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
-                        </p>
-                        <h3 class="read-more">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                       
+                        </div>  
                     </div>
+
                 </div> 
             
                 <div class="cards-detail-top">
-                    <div class="new-avatar">
-                        <span class="ant-avatar-icon">
-                        <img src="./picture/teacher/teacher6.jpeg">
-                        </span>
-                    </div>
-                    <div class="partner-card-information" >
+                    <div class="discussion-block">
+                        
+                        <div class="new-avatar">
+                            <span class="ant-avatar-icon">
+                            <img src="./picture/teacher/teacher6.jpeg">
+                            </span>
+                        </div>
+                        <div class="partner-card-information" >
+                           
+                            <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
+                                <span>Essay: Do you agree or disagree?</span><span class="title-none">Parents are the best teacher.</span>      
+                            </h1>    
+                            <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
+                                <span>David</span>              
+                            </h2>
+                            <h3>
+                                <span>3 hours ago</span>
+                            </h3>
+                            <p>
+                                it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
+                            </p>
+                            <h3 class="read-more">Read More......</p>
+                            </h3>
+                            <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                            <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
+                            <span>3</span>
+                        </div>
                         <div class="light">
                             <span>Open</span>
                         </div>
-                        <h1 class="subject" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 20px; font-weight: 400;">
-                            <span>Essay: Do you agree or disagree?Parents are the best teacher.</span>      
-                        </h1>    
-                        <h2 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; font-size: 16px; font-weight: 400;">
-                            <span>David</span>              
-                        </h2>
-                        <h3>
-                            <span>20 minutes ago</span>
-                        </h3>
-                        <p>
-                            it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content it is the content 
-                        </p>
-                        <h3 class="read-more">Read More......</p>
-                        </h3>
-                        <img src="picture/icon/meg-icon2.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                        <img src="picture/icon/heart-icon.png" style="width: 18px; height: 18px;"> 
-                        <span>3</span>
-                    </div>
+                    </div>    
                 </div> 
                 
             </div>

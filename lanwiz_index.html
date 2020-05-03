@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Lanwiz-Home</title>
     <link rel="stylesheet" href="./css/lanwiz_index.css">
+    <link rel="stylesheet" href="./css/lanwiz_login.css">
+    <link rel="stylesheet" href="./selectbox/selectbox.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -30,69 +32,66 @@
         <!-- below is top header (logo, navlist-left, and navlist-right) -->
         <nav class="menu">
             <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-            <div class="menu-logo"><img class="menu-logo" src="./picture/logo-white.png"></div>
+            <a href="./lanwiz_index.html"><img class="menu-logo" src="./picture/logo-white.png"></a>
             <ul id="menuUl" class="active">
-              <li><a>Log in</a></li>
+                <li><a class="btn_modal">Log in</a></li>
                 <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
-               <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
-              <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
+                <li> <a href="./lanwiz_blog2.html" class="link_style">Blog</a></li>
+                <li><a href="./lanwiz_discussion2.html" class="link_style">Discussion</a></li>
                 <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
             </ul>
         </nav>
 
         <script src="./js/lanwiz_index.js"></script>
-        <!-- <div class="top_nav" id=containder> 
+        <div class="overlay">
+            <article>
+                <div class="login_page">
+                    <div id="container1">
 
-            <img class="logo" src="./picture/logo-white.png">
-            <div class="nav_list_container">
-
-                <ul class="nav_list_left">
-                    <li class=language_exchange>
-                        <a href="./lanwiz_exchange.html" class="link_style">Find a Partner</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <div class="dropdown-block">
-                            Community
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a href="./lanwiz_discussion.html" class="link_style" target="_blank">Help Each Other</a>
-                                </li>
-                                <li>
-                                    <a href="./lanwiz_blog.html" class="link_style" target="_blank">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="about">
-                        <a href="./lanwiz_about.html" class="link_style" target="_blank">About Us</a>
-                    </li>
-                </ul>
-            
-                
-                
-                <ul class="nav_list_right">
-                    <li class="login">
-                    <a href="#" target="_blank">Log in</a>
-                    </li>
-                    <li class="signup">
-                        <a href="#" target="_blank">Sign up</a>
-                    </li>
-                    <li class="English">
-                        <a href="#" target="_blank">English</a>
-                    </li>
-                    
-                </ul>
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+                      <div class="login">  
+                        <h3>Log in</h3>
+                        <form action="用戶管理.php">
+                          <input type="text" id="username" name="username" placeholder="Account" required>
+                          <div class="tab"></div>
+                          <input type="text" id="password" name="password" placeholder="Password" required>
+                          <div class="tab"></div>
+                          <input type="submit" value="Log in" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+                        </form>
+                        <h5 onclick="show_hide()">Sign up</h5>
+                      </div><!-- login end-->
+                    </div><!-- container1 end-->
+                  </div><!-- login_page end-->
+                  <div class="signup_page">
+                    <div id="container2">
+                      <div class="signup">  
+                        <h3>Sign Up</h3>
+                        <form action="用戶管理.php">
+                          <input type="text" id="fullname" name="fullname" placeholder="User Name" required>
+                          <div class="tab"></div>
+                          <input type="text" id="username2" name="username" placeholder="Account" required>
+                          <div class="tab"></div>
+                          <input type="text" id="password2" name="password" placeholder="Password" required>
+                          <div class="tab"></div>
+                          <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Re-enter Password" required>
+                          <div class="tab"></div>            
+                          <input type="submit" value="Sign up" class="submit">
+                        </form>  
+              
+                        <h5 onclick="show_hide()">Log in</h5>
+                        
+                      </div><!-- signup end-->
+                    </div><!-- container2 end-->
+                  </div><!-- signup_page end--> 
+              
+                  <div id="copyright">
+                    <h4>Copyright © 2020 ChingLin All rights reserved</h4><!--因為js，會跑版--> 
+                  </div>    
+                <button type="button" class="btn_modal_close">Close</button>
+            </article>
             </div>
-            
-        </div>
-         -->
+        
+            <script src="./js/lanwiz_login.js"></script>
+
         <!-- homepage-content -->
         <div class="homepage-content">
             <div class="down-button">
@@ -104,13 +103,35 @@
                 <h2>
                     Become fluent in any language.
                 </h2>
-                <div class="homepage-menu">
-                        <input class="homepage-menu-select" type="text" placeholder="Choose a Language">
-                        <span class="homepage-search-icon">
-                            <img src="./picture/icon/search.png" alt="search">
-                        </span>
+                <div class="selectbox-container">
+                    <div class="selectbox-dropdown">
+                      <div class="selectbox-select">
+                        <span>Choose a Language</span>
+                        <i class="fa fa-chevron-left"></i>
+                      </div>
+                      <input type="hidden" name="language">
+                      <ul class="selectbox-dropdown-menu">
+                        <li id="Chinese">Chinese</li>
+                        <li id="English">English</li>
+                        <li id="French">French</li>
+                        <li id="German">German</li>
+                        <li id="Spanish">Spanish</li>
+                        <li id="Japanese">Japanese</li>
+                        <li id="Korean">Korean</li>
+                        <li id="Portuguese">Portuguese</li>
+                        <li id="Italian">Italian</li>
+                        <li id="Arabic">Arabic</li>
+                        <li id="Hindi">Hindi</li>
+                        <li id="Russian">Russian</li>
+                      </ul>
+                    </div>
+                    <span class="selectbox-homepage-search-icon">
+                        <img src="./picture/icon/search.png" alt="search">
+                    </span>
+                     <span class="msg"></span>
                 </div>
             </div>
+            <script src="./selectbox/selectbox.js"></script>
         </div>
     </div>
 

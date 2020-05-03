@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>Lanwiz-About Us</title>
+    <link rel="stylesheet" href="./css/lanwiz_login.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    
+    <!-- <button type="button" class="btn_modal">Log in / Sign up</button> -->
+
+    <nav class="menu">
+        <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+        <div class="menu-logo"><img class="menu-logo" src="./picture/logo-white.png"></div>
+        <ul id="menuUl" class="active">
+            <li><a class="btn_modal">Log in</a></li>
+            <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
+            <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
+            <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
+            <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay">
+    <article>
+        <div class="login_page">
+            <div id="container1">
+      
+              <div class="login">  
+                
+                <h3>Log in</h3>
+      
+                <form action="用戶管理.php">
+                  <input type="text" id="username" name="username" placeholder="Account" required>
+                  <div class="tab"></div>
+                  <input type="text" id="password" name="password" placeholder="Password" required>
+                  <div class="tab"></div>
+                  <input type="submit" value="Log in" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+                </form>  
+      
+                <h5 onclick="show_hide()">Sign up</h5>
+                
+              </div><!-- login end-->
+            </div><!-- container1 end-->
+          </div><!-- login_page end-->
+          
+          <div class="signup_page">
+            <div id="container2">
+      
+              <div class="signup">  
+                
+                <h3>Sign Up</h3>
+      
+                <form action="用戶管理.php">
+                  <input type="text" id="fullname" name="fullname" placeholder="User Name" required>
+                  <div class="tab"></div>
+                  <input type="text" id="username2" name="username" placeholder="Account" required>
+                  <div class="tab"></div>
+                  <input type="text" id="password2" name="password" placeholder="Password" required>
+                  <div class="tab"></div>
+                  <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Re-enter Password" required>
+                  <div class="tab"></div>            
+                  <input type="submit" value="Sign up" class="submit">
+                </form>  
+      
+                <h5 onclick="show_hide()">Log in</h5>
+                
+              </div><!-- signup end-->
+            </div><!-- container2 end-->
+          </div><!-- signup_page end--> 
+      
+          <div id="copyright">
+            <h4>Copyright © 2020 ChingLin All rights reserved</h4><!--因為js，會跑版--> 
+          </div>    
+        <button type="button" class="btn_modal_close">Close</button>
+    </article>
+    </div>
+
+    <script src="./js/lanwiz_login.js"></script>
+
+  </body>
+
+
+</html>

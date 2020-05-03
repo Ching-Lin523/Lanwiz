@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Lanwiz-Exchange</title>
     <link rel="stylesheet" href="./css/lanwiz_exchange2.css">
+    <link rel="stylesheet" href="./selectbox/selectbox_exchange_english.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script src="https://kit.fontawesome.com/808e969dcf.js"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/lanwiz_login.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="./css/exchange2_rwd.css">
@@ -21,43 +23,115 @@
 
   
     <div class="exchange_bar">
-        <!-- below is top header (logo, navlist-left, and navlist-right) -->
-        <nav class="menu">
-            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-            <div class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></div>
-            <div class="language-switch">
-              <h1>English</h1>
-              <span class="triangle1"></span>
+        <!-- below is top header -->
+      <nav class="menu">
+        <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+        <a href="./lanwiz_index.html" class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></a>
+        <div class="selectbox-container">
+          <div class="selectbox-dropdown">
+            <div class="selectbox-select">
+              <span>English</span>
+              <i class="fa fa-chevron-left"></i>
             </div>
-            
-            <ul id="menuUl" class="active">
-              <li><a>Log in</a></li>
-                <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
-               <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
-              <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
-                <li class="current-active"><a href="./lanwiz_exchange.html" class="link_style">Find a Partner</a></li>
+            <input type="hidden" name="language">
+            <ul class="selectbox-dropdown-menu">
+              <li id="Chinese">Chinese</li>
+              <li id="English">English</li>
+              <li id="French">French</li>
+              <li id="German">German</li>
+              <li id="Spanish">Spanish</li>
+              <li id="Japanese">Japanese</li>
+              <li id="Korean">Korean</li>
+              <li id="Portuguese">Portuguese</li>
+              <li id="Italian">Italian</li>
+              <li id="Arabic">Arabic</li>
+              <li id="Hindi">Hindi</li>
+              <li id="Russian">Russian</li>
             </ul>
-        </nav>
-        <nav class="menu2">
-            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+          </div>
+          <script src="./selectbox/selectbox.js"></script>
           
-            <ul id="menuUl" class="active">
-              <li><a>Speciaty</a></li>
-                <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
-               <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
-
-            </ul>
-            <div class="search-partner-input">
-              <div class="search-partner-input-btn">
-                <img src="./picture/icon/search.png" alt="search icon">
-              </div>
-                <input id="search-partner-skills" placeholder="Name or Keywords..." value>
-            </div>
+            <span class="msg"></span>
+        </div>
+        <ul id="menuUl" class="active">
+            <li><a class="btn_modal">Log in</a></li>
+            <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
+            <li> <a href="./lanwiz_blog2.html" class="link_style">Blog</a></li>
+            <li><a href="./lanwiz_discussion2.html" class="link_style">Discussion</a></li>
+            <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
+        </ul>
+      </nav>
+      <nav class="menu2">
+        <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
       
-        </nav>
-        
+        <ul id="menuUl" class="active">
+          <li><a>Speciaty</a></li>
+            <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
+           <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
 
-        <script src="./js/lanwiz_exchange2.js"></script>
+        </ul>
+        <div class="search-partner-input">
+          <div class="search-partner-input-btn">
+            <img src="./picture/icon/search.png" alt="search icon">
+          </div>
+            <input id="search-partner-skills" placeholder="Name or Keywords..." value>
+        </div>
+  
+    </nav>
+    
+
+    <script src="./js/lanwiz_exchange2.js"></script>
+
+     
+      <div class="overlay">
+          <article>
+              <div class="login_page">
+                  <div id="container1">
+
+                    <div class="login">  
+                      <h3>Log in</h3>
+                      <form action="用戶管理.php">
+                        <input type="text" id="username" name="username" placeholder="Account" required>
+                        <div class="tab"></div>
+                        <input type="text" id="password" name="password" placeholder="Password" required>
+                        <div class="tab"></div>
+                        <input type="submit" value="Log in" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+                      </form>
+                      <h5 onclick="show_hide()">Sign up</h5>
+                    </div><!-- login end-->
+                  </div><!-- container1 end-->
+                </div><!-- login_page end-->
+                <div class="signup_page">
+                  <div id="container2">
+                    <div class="signup">  
+                      <h3>Sign Up</h3>
+                      <form action="用戶管理.php">
+                        <input type="text" id="fullname" name="fullname" placeholder="User Name" required>
+                        <div class="tab"></div>
+                        <input type="text" id="username2" name="username" placeholder="Account" required>
+                        <div class="tab"></div>
+                        <input type="text" id="password2" name="password" placeholder="Password" required>
+                        <div class="tab"></div>
+                        <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Re-enter Password" required>
+                        <div class="tab"></div>            
+                        <input type="submit" value="Sign up" class="submit">
+                      </form>  
+            
+                      <h5 onclick="show_hide()">Log in</h5>
+                      
+                    </div><!-- signup end-->
+                  </div><!-- container2 end-->
+                </div><!-- signup_page end--> 
+            
+                <div id="copyright">
+                  <h4>Copyright © 2020 ChingLin All rights reserved</h4><!--因為js，會跑版--> 
+                </div>    
+              <button type="button" class="btn_modal_close">Close</button>
+          </article>
+          </div>
+      
+          <script src="./js/lanwiz_login.js"></script>
+        
 
     </div>
 
@@ -84,7 +158,7 @@
             </div>
 
             <div class="new-avatar-information">
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>Anne</span>
               </h1>
               <div class="flag">
@@ -174,7 +248,7 @@
             </div>
 
             <div class="new-avatar-information">
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>Meg</span>
               </h1>
               <div class="flag">
@@ -264,7 +338,7 @@
             </div>
 
             <div class="new-avatar-information" >
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>David</span>
               </h1>
               <div class="flag">
@@ -353,7 +427,7 @@
             </div>
 
             <div class="new-avatar-information">
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>Jack</span>
               </h1>
               <div class="flag">
@@ -442,7 +516,7 @@
             </div>
 
             <div class="new-avatar-information" >
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>Jane</span>
               </h1>
               <div class="flag">
@@ -531,7 +605,7 @@
             </div>
 
             <div class="new-avatar-information" >
-              <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
+              <h1 calss="David" style="color: rgba(51, 51, 51);  margin-bottom: 5px; font-size: 23px; font-weight: 400;">
                 <span>Mike</span>
               </h1>
               <div class="flag">
@@ -637,201 +711,201 @@
         </div>
     </section>
     <footer>
-        <div class="footer-part1">
-            <div class="language-container">
-                <section class="footer-language">
-                    <h3> Languages</h3><br>
-                </section>
-                <ul>
-                    <li>
-                        <span>English</span>
-                    </li>
-                    <li>
-                        <span>Spanish</span>
-                    </li>
-                    <li>
-                        <span>Chinese (Mandarin)</span>
-                    </li>
-                    <li>
-                        <span>Português</span>
-                    </li>
-                    <li>
-                        <span>German</span>
-                    </li>
-                    <li>
-                        <span>Japanese</span>
-                    </li>
-                    <li>
-                        <span>Korean</span>
-                    </li>
-                    <li>
-                        <span>French</span>
-                    </li>
-                    <li>
-                        <span>Italian</span>
-                    </li>
-                    <li>
-                        <span>Russian</span>
-                    </li>
-                    <li>
-                        <span>Thai</span>
-                    </li>
-                    <li>
-                        <span>Vietnamese</span>
-                    </li>
-                    <li>
-                        <span>Others</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="language-container">
-                <section class="footer-language">
-                    <h3> Local Partner</h3><br>
-                </section>
-                <ul>
-                    <li>
-                        <span>Taiwan</span>
-                    </li>
-                    <li>
-                        <span>Japan</span>
-                    </li>
-                    <li>
-                        <span>Korea</span>
-                    </li>
-                    <li>
-                        <span>China</span>
-                    </li>
-                    <li>
-                        <span>Australia</span>
-                    </li>
-                    <li>
-                        <span>New Zealand</span>
-                    </li>
-                    <li>
-                        <span>Germany</span>
-                    </li>
-                    <li>
-                        <span>France</span>
-                    </li>
-                    <li>
-                        <span>Belgium</span>
-                    </li>
-                    <li>
-                        <span>Netherlands</span>
-                    </li>
-                    <li>
-                        <span>Spain</span>
-                    </li>
-                    <li>
-                        <span>Italy</span>
-                    </li>
-                    <li>
-                        <span>Portugal</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="language-container">
-                <section class="footer-language">
-                    <h3> <br></h3><br>
-                </section>
-                <ul>
-                    <li>
-                        <span>Greece</span>
-                    </li>
-                    <li>
-                        <span>Sweden</span>
-                    </li>
-                    <li>
-                        <span>United Kingdom</span>
-                    </li>
-                    <li>
-                        <span>Denmark</span>
-                    </li>
-                    <li>
-                        <span>Norway</span>
-                    </li>
-                    <li>
-                        <span>Switzerland</span>
-                    </li>
-                    <li>
-                        <span>Luxembourg</span>
-                    </li>
-                    <li>
-                        <span>Ireland</span>
-                    </li>
-                    <li>
-                        <span>India</span>
-                    </li>
-                    <li>
-                        <span>Malaysia</span>
-                    </li>
-                    <li>
-                        <span>Thailand</span>
-                    </li>
-                    <li>
-                        <span>Singapore</span>
-                    </li>
-                    <li>
-                        <span>Indonasia</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="language-container">
-                <section class="footer-language">
-                    <h3> <br></h3><br>
-                </section>
-                <ul>
-                    <li>
-                        <span>Vietnam</span>
-                    </li>
-                    <li>
-                        <span>United State</span>
-                    </li>
-                    <li>
-                        <span>Russia</span>
-                    </li>
-                    <li>
-                        <span>Canada</span>
-                    </li>
-                    <li>
-                        <span>Argentina</span>
-                    </li>
-                    <li>
-                        <span>Finland</span>
-                    </li>
-                    <li>
-                        <span>Mexico</span>
-                    </li>
-                    <li>
-                        <span>Philippines</span>
-                    </li>
-                    <li>
-                        <span>United Arab Emirates</span>
-                    </li>
-                    <li>
-                        <span>Turkey</span>
-                    </li>
-                    <li>
-                        <span>Czech</span>
-                    </li>
-                    <li>
-                        <span>Israel</span>
-                    </li>
-                    <li>
-                        <span>Others</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-icon">
-            <img class="footer-simple-img" src="./picture/icon/facebook.png" alt="Facebook" width="25" height="25">
-            <img class="footer-simple-img" src="./picture/icon/twitter.png" alt="twitter" width="25" height="25">
-            <img class="footer-simple-img" src="./picture/icon/instagram.png" alt="instagram" width="25" height="25">
-            <img class="footer-simple-img" src="./picture/icon/youtube.png" alt="youtube" width="25" height="25">
-            <img class="footer-simple-img" src="./picture/icon/wechat.png" alt="wechat" width="25" height="25">
-        </div>
-    </footer>
+      <div class="footer-part1">
+          <div class="language-container">
+              <section class="footer-language">
+                  <h3> Languages</h3>
+              </section>
+              <ul>
+                  <li>
+                      <span>English</span>
+                  </li>
+                  <li>
+                      <span>Spanish</span>
+                  </li>
+                  <li>
+                      <span>Chinese (Mandarin)</span>
+                  </li>
+                  <li>
+                      <span>Português</span>
+                  </li>
+                  <li>
+                      <span>German</span>
+                  </li>
+                  <li>
+                      <span>Japanese</span>
+                  </li>
+                  <li>
+                      <span>Korean</span>
+                  </li>
+                  <li>
+                      <span>French</span>
+                  </li>
+                  <li>
+                      <span>Italian</span>
+                  </li>
+                  <li>
+                      <span>Russian</span>
+                  </li>
+                  <li>
+                      <span>Thai</span>
+                  </li>
+                  <li>
+                      <span>Vietnamese</span>
+                  </li>
+                  <li>
+                      <span>Others</span>
+                  </li>
+              </ul>
+          </div>
+          <div class="language-container">
+              <section class="footer-language">
+                  <h3> Local Partner</h3>
+              </section>
+              <ul>
+                  <li>
+                      <span>Taiwan</span>
+                  </li>
+                  <li>
+                      <span>Japan</span>
+                  </li>
+                  <li>
+                      <span>Korea</span>
+                  </li>
+                  <li>
+                      <span>China</span>
+                  </li>
+                  <li>
+                      <span>Australia</span>
+                  </li>
+                  <li>
+                      <span>New Zealand</span>
+                  </li>
+                  <li>
+                      <span>Germany</span>
+                  </li>
+                  <li>
+                      <span>France</span>
+                  </li>
+                  <li>
+                      <span>Belgium</span>
+                  </li>
+                  <li>
+                      <span>Netherlands</span>
+                  </li>
+                  <li>
+                      <span>Spain</span>
+                  </li>
+                  <li>
+                      <span>Italy</span>
+                  </li>
+                  <li>
+                      <span>Portugal</span>
+                  </li>
+              </ul>
+          </div>
+          <div class="language-container">
+              <section class="footer-language">
+                  <h3> Local Partner</h3>
+              </section>
+              <ul>
+                  <li>
+                      <span>Greece</span>
+                  </li>
+                  <li>
+                      <span>Sweden</span>
+                  </li>
+                  <li>
+                      <span>United Kingdom</span>
+                  </li>
+                  <li>
+                      <span>Denmark</span>
+                  </li>
+                  <li>
+                      <span>Norway</span>
+                  </li>
+                  <li>
+                      <span>Switzerland</span>
+                  </li>
+                  <li>
+                      <span>Luxembourg</span>
+                  </li>
+                  <li>
+                      <span>Ireland</span>
+                  </li>
+                  <li>
+                      <span>India</span>
+                  </li>
+                  <li>
+                      <span>Malaysia</span>
+                  </li>
+                  <li>
+                      <span>Thailand</span>
+                  </li>
+                  <li>
+                      <span>Singapore</span>
+                  </li>
+                  <li>
+                      <span>Indonasia</span>
+                  </li>
+              </ul>
+          </div>
+          <div class="language-container">
+              <section class="footer-language">
+                  <h3> Local Partner</h3>
+              </section>
+              <ul>
+                  <li>
+                      <span>Vietnam</span>
+                  </li>
+                  <li>
+                      <span>United State</span>
+                  </li>
+                  <li>
+                      <span>Russia</span>
+                  </li>
+                  <li>
+                      <span>Canada</span>
+                  </li>
+                  <li>
+                      <span>Argentina</span>
+                  </li>
+                  <li>
+                      <span>Finland</span>
+                  </li>
+                  <li>
+                      <span>Mexico</span>
+                  </li>
+                  <li>
+                      <span>Philippines</span>
+                  </li>
+                  <li>
+                      <span>United Arab Emirates</span>
+                  </li>
+                  <li>
+                      <span>Turkey</span>
+                  </li>
+                  <li>
+                      <span>Czech</span>
+                  </li>
+                  <li>
+                      <span>Israel</span>
+                  </li>
+                  <li>
+                      <span>Others</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+     
+      <div class="footer-icon">
+          <img class="footer-simple-img" src="./picture/icon/facebook.png" alt="Facebook" width="25" height="25">
+          <img class="footer-simple-img" src="./picture/icon/twitter.png" alt="twitter" width="25" height="25">
+          <img class="footer-simple-img" src="./picture/icon/instagram.png" alt="instagram" width="25" height="25">
+          <img class="footer-simple-img" src="./picture/icon/youtube.png" alt="youtube" width="25" height="25">
+          <img class="footer-simple-img" src="./picture/icon/wechat.png" alt="wechat" width="25" height="25">
+      </div>
+  </footer>
 
        
     </div>

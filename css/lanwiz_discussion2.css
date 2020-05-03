@@ -146,6 +146,7 @@ body{
   margin-left: 12px;
 }
 .search-partner-input input {
+  padding:0;
   border: 1px solid green;
   width: 200px;
   height: 38px;
@@ -188,6 +189,13 @@ body{
   border-bottom: 1px solid #9c9c9c;
   padding: 15px;
 }
+.discussion-block{
+  margin: 0 auto;
+  border: 1px solid yellow;
+  display: flex;
+  width: 90%;
+}
+
 
 .ant-avatar-icon>img {
     margin-top: 20px;
@@ -242,23 +250,21 @@ body{
   color: rgb(51, 51, 51);
 
 }
-.partner-card-information h3.read-more {
+.partner-card-information>h3.read-more {
   text-align: right;
   color: rgb(141, 139, 139);
   font-style: italic;
+  width: 100%;
 
 }
 .light{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding-left: 16px;
-    margin-left: 430px;
+    /* margin-left: 430px; */
     position: relative;
+    padding-top: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     font-size: 12px;
-    font-weight: 500;
     text-transform: uppercase;}
  
 
@@ -352,6 +358,7 @@ span.triangle1{
   margin-top: 100px;
 }
   .cards-right{
+    width: 25%;
     display: flex;
     margin-left: 5%;
     height: 330px;
@@ -372,16 +379,14 @@ img{
   font-size: 20px;
   color: rgb(51, 51, 51);
   text-align: center;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  justify-content: center;
   
 }
 .content>h2{
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   width: 80%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+ margin-top: 30px;
   font-size: 16px;
   text-align: center;
   line-height: 24px;
@@ -391,22 +396,17 @@ a{
 }
 .get-corrected-btn{
   display: flex;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  line-height: 2.2;
+  margin: 0 auto;
   margin-top: 30px;
-  width: 180px;
-  height: 30px;
+  width: 160px;
   font-size: 18px;
   color: #fff;
   background-image:linear-gradient(270deg,#64d4b8,#17ad99);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 10px 0px;
   border-radius: 4px;
-
   justify-content: center;
-  /* line-height: 56px; */
   cursor: pointer;
-  padding-top: 10px;
-  /* text-decoration: none; */
 }
 
 
@@ -560,10 +560,10 @@ div.pagination_block > ul.pagination > li > a:hover{
 .footer-icon{
     display: flex;
     border: 1px solid blue;
-    width: 10%;
+    width: 100%;
     height: 50px;
     margin: 0 auto;
-    flex-direction: row;
+    justify-content: center;
     align-items: flex-end;
 }
 .footer-icon img{
