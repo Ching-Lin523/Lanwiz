@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./selectbox/selectbox_exchange_english.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <script src="https://kit.fontawesome.com/808e969dcf.js"
+    <script src="https://kit.fontawesome.com/808e969dcf.js"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/lanwiz_login.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
@@ -64,12 +64,19 @@
       <nav class="menu2">
         <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
       
-        <ul id="menuUl" class="active">
+        <!-- <ul id="menuUl" class="active">
           <li><a>Speciaty</a></li>
             <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
            <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
 
-        </ul>
+        </ul> -->
+        <select class="custom_select">
+          <option>General</option>
+          <option>Business</option>
+          <option>Test Prep</option>
+          <option>Conversation</option>
+        </select>
+
         <div class="search-partner-input">
           <div class="search-partner-input-btn">
             <img src="./picture/icon/search.png" alt="search icon">
@@ -77,7 +84,7 @@
             <input id="search-partner-skills" placeholder="Name or Keywords..." value>
         </div>
   
-    </nav>
+      </nav>
     
 
     <script src="./js/lanwiz_exchange2.js"></script>
@@ -189,31 +196,26 @@
 
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
-                
               </ul>
             </div>
     
-            <div class="tabContainer" id="videos">
+            <div class="tabContainer" id="videos" style="display: block;">
               <div class = "has-text-centered">
-                <video class="video-player" controls="controls" controls="controls">
+                <video class="video-player" controls="controls">
                   <source src="/video/partners_search.mp4" type="video/ogg" />
                   <source src="/i/movie.mp4" type="video/mp4" />
                 </video>
@@ -223,8 +225,6 @@
     
             <div class="tabContainer" id="documents">
               <div class = "has-text-centered">
-                
-              </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
                 tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
@@ -232,6 +232,7 @@
             </div>
 
           </div>
+        </div>
         </section>
       </div>   
      
@@ -279,21 +280,17 @@
 
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
@@ -368,21 +365,17 @@
 
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
@@ -457,28 +450,23 @@
 
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
                 
               </ul>
             </div>
-    
             <div class="tabContainer" id="videos">
               <div class = "has-text-centered">
                 <video class="video-player" controls="controls" controls="controls">
@@ -546,28 +534,23 @@
 
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
                 
               </ul>
             </div>
-    
             <div class="tabContainer" id="videos">
               <div class = "has-text-centered">
                 <video class="video-player" controls="controls" controls="controls">
@@ -634,28 +617,23 @@
         </div>
         <section class="section">
           <div class="container">
-    
             <div class="tabs is-boxed">
               <ul id="ul">
-    
-                <li>
+                <li class="videos">
                   <a>
-                    <span class="icon is-small"><i class="fas fa-film"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
                     <span>Videos</span>
                   </a>
                 </li>
-                <li>
+                <li class="intro">
                   <a>
-                    <span class="icon is-small"><i class="far fa-file-alt"
-                        aria-hidden="true"></i></span>
+                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
                     <span>Introduction</span>
                   </a>
                 </li>
                 
               </ul>
             </div>
-    
             <div class="tabContainer" id="videos">
               <div class = "has-text-centered">
                 <video class="video-player" controls="controls" controls="controls">

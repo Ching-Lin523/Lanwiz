@@ -116,7 +116,7 @@
 
 @media (min-width: 768px) and (max-width: 995px){
     .our-story-founder-section-content-container>img {
-        margin-top: -520px;}
+        margin-top: -300px;}
     
     .our-story-founder-section-content-container{
         margin: 80px auto 0;
@@ -138,9 +138,9 @@
 }
 @media (min-width: 400px) and (max-width: 767px){
     .our-story-founder-section-content-container>img {
-        margin-top: -300px;}
+        margin-top: -180px;}
     .our-story-founder-section {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-top: 200px;
         background-color: rgb(159, 209, 212);
         text-align: center;
@@ -172,7 +172,7 @@
         width: 70px;
     }
     article.card p {
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
         width: 80%;
         font-size: 1rem;
         margin: 10px auto;
@@ -182,6 +182,8 @@
 }
 
 @media (max-width: 399px){
+    .our-story-founder-section-content-container>img {
+        margin-top: -100px;}
     .service-slide-item {
         width: 100%;}
     .video_placeholder {
@@ -215,7 +217,7 @@
 @media (max-width: 768px) {
 
     .foot>h1.foot1{
-        border: 3px solid yellow;
+        /* border: 3px solid yellow; */
         font-size: 22px;
         font-weight: bold;
         color: white;
@@ -231,7 +233,7 @@
         /* display: inline-flex; */
         text-align: center;
         /* margin-bottom: 30px; */
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
     }
     
     
@@ -255,7 +257,7 @@
   
     /* footer */
     .footer-part1{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         width: 80%;
         align-items: flex-start;
         /* border-bottom: none; */
@@ -270,7 +272,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 50px;
       
         color: grey;
@@ -296,7 +298,7 @@
       
       .footer-icon{
         display: flex;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         height: 50px;
         margin: 0 auto;
         flex-direction: row;

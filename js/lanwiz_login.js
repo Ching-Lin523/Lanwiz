@@ -8,10 +8,12 @@ $(function(){
     // 關閉 Modal
     $(".btn_modal_close").on("click", function(){
       $("div.overlay").addClass("-opacity-zero");
+      // $("div.overlay").show();
       
       // 設定隔一秒後，移除相關 class
       setTimeout(function(){
         $("div.overlay").removeClass("-on -opacity-zero");
+        $("div.overlay").hide();
       }, 1000);
     });
     

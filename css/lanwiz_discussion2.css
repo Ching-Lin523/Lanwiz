@@ -28,11 +28,12 @@ body{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
 }
 .menu2 {
+  top: 1px;
     z-index: 9;
     /* position: fixed; */
     position: relative;
     /* top: 64px; */
-     border: 1px solid red;
+     /* border: 1px solid red; */
     width: 100%;
     padding-left: 2%;
     display: flex;
@@ -44,8 +45,8 @@ body{
   /* margin-right: 50px; */
   width: 100%;
 }
-.menu li {
-    border: 1px solid yellow;
+.menu>ul>li{
+    /* border: 1px solid yellow; */
    float: right;
     list-style: none;
     font-size: 16px;
@@ -53,7 +54,9 @@ body{
     margin-left: 12px;
     padding: 6px 6px 6px 10px;
 }
-
+.menu>ul>li.current-active>a{
+  color:#17ad99;
+}
 .menu2 li {
     border: 1px solid rgb(173, 171, 171);
     border-radius: 10px;
@@ -85,21 +88,21 @@ body{
 .language-switch{
   width: 10%;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 7%;
 }
 .language-switch>h1{
   display: flex;
   /* position: relative; */
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: grey
 }
 .language-switch>span.triangle1{
   display: flex;
   margin: auto;
   margin-left: 3%;
-  border: 10px solid red;
+  /* border: 10px solid red; */
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 10px solid rgb(148, 148, 148);
@@ -121,7 +124,7 @@ body{
   margin-right: 5%;
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .search-partner-input-btn{
   background: linear-gradient(270deg,#64d4b8,#17ad99);
@@ -130,7 +133,7 @@ body{
   line-height: 64px;
   text-align: center;
   border-left: 1px solid #e9e9eb;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 10px 0 0 10px;
 
 }
@@ -147,7 +150,7 @@ body{
 }
 .search-partner-input input {
   padding:0;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 200px;
   height: 38px;
   font-size: 14px;
@@ -159,7 +162,7 @@ body{
 
 .partner-card-container{
    width: 80%;
-   border: 3px solid blue;
+   /* border: 3px solid blue; */
    display: flex;
    margin: 0 auto;
 }
@@ -170,7 +173,7 @@ body{
     margin-bottom: 20px;
     z-index: 1;
     margin-top: 140px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 100%;
 }
 .cards-left{
@@ -191,7 +194,7 @@ body{
 }
 .discussion-block{
   margin: 0 auto;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   display: flex;
   width: 90%;
 }
@@ -230,7 +233,7 @@ body{
   position: relative;
   width: 70%;
   margin-left: 16px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .partner-card-information h1 {
   
@@ -258,7 +261,7 @@ body{
 
 }
 .light{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 16px;
     /* margin-left: 430px; */
     position: relative;
@@ -466,7 +469,7 @@ div.pagination_block > ul.pagination > li > a:hover{
     /* background-attachment: scroll; */
     width: 100%;
     text-align: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     color: white;
     background-image: url(../picture/people/man_laptop3.jpg);
     background-size: cover;
@@ -477,11 +480,12 @@ div.pagination_block > ul.pagination > li > a:hover{
 
 .foot{
     padding: 0;
-    border: 8px solid green;
+    /* border: 8px solid green; */
     margin: auto;
 }
 .foot>h1.foot1{
-    border: 3px solid yellow;
+    padding: 30px;
+    /* border: 3px solid yellow; */
     font-size: 2.4rem;
     font-weight: bold;
     color: white;
@@ -497,7 +501,7 @@ div.pagination_block > ul.pagination > li > a:hover{
     /* display: inline-flex; */
     text-align: center;
     /* margin-bottom: 30px; */
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 
@@ -519,7 +523,7 @@ div.pagination_block > ul.pagination > li > a:hover{
 
 /* footer */
 .footer-part1{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 80%;
     align-items: flex-start;
     /* border-bottom: none; */
@@ -534,7 +538,7 @@ div.pagination_block > ul.pagination > li > a:hover{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 50px;
 
     color: grey;
@@ -558,8 +562,9 @@ div.pagination_block > ul.pagination > li > a:hover{
 }
 
 .footer-icon{
+    border-top: 1px solid grey;
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 50px;
     margin: 0 auto;

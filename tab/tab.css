@@ -1,3 +1,7 @@
+#videos, #documents{
+  display: none;
+}
+
 .section{
     border: 1px solid red;
    width: 40%;

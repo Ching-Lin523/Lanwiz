@@ -11,7 +11,7 @@ body{
 }
 
 .video_placeholder{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -34,7 +34,7 @@ body{
     width: 100%;
     text-align: center;
     font-size: 24px;
-    border:2px solid blue;
+    /* border:2px solid blue; */
     position: absolute;
     color:#fff;
     top: 43%;
@@ -56,7 +56,7 @@ body{
         z-index: 1000;
         position: fixed;
         top: 0;
-         border: 1px solid red;
+         /* border: 1px solid red; */
         width: 100%;
         /* height: 8%; */
         display: flex;
@@ -69,7 +69,7 @@ body{
       width: 60%;
     }
     .menu li {
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
        float: right;
         list-style: none;
         font-size: 16px;
@@ -86,6 +86,10 @@ body{
         cursor: pointer;
     }
     
+
+    .menu>ul>li.current-active>a{
+        color:#17ad99;
+      }
     .menu .menu-logo {
         width: 45px;
         height: 45px;
@@ -110,7 +114,7 @@ body{
 
 .vision{
 
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     margin: 0 auto;
     padding: 50px 0;
     line-height: 1.43;
@@ -124,21 +128,21 @@ body{
    text-align: center;
 } 
 .our-story-founder-section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 260px;
     background-color: rgb(159, 209, 212);
     text-align: center;
 }
 
 .our-story-founder-section-content-container{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 90px auto 30px;
     width: 90%;
     /* height: 900px; */
     
 }
 .our-story-founder-section-content-container>img{
-    margin-top: -390px;
+    margin-top: -300px;
     margin-bottom: 10px;
     width: 70%;
     z-index: 999;
@@ -202,14 +206,15 @@ article.card{
 
 
 article.card a.img_block {
-    border: 1px solid red;
+    padding: 12px;
+    /* border: 1px solid red; */
     display: block;
     font-size: 0;
 }
 article.card a.img_block > img{
     display: block;
     margin: 0 auto;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 70px; 
     width: 70px; 
     visibility: visible;
@@ -229,7 +234,7 @@ article.card h1 {
     text-align: center;
 }
 article.card p {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 80%;
     font-size: 1rem;
     margin: 0 auto ;
@@ -254,7 +259,7 @@ article.card p {
     /* background-attachment: scroll; */
     width: 100%;
     text-align: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     color: white;
     background-image: url(../picture/people/man_laptop3.jpg);
     background-size: cover;
@@ -265,11 +270,12 @@ article.card p {
 
 .foot{
     padding: 0;
-    border: 8px solid green;
+    /* border: 8px solid green; */
     margin: auto;
 }
 .foot>h1.foot1{
-    border: 3px solid yellow;
+    padding: 30px;
+    /* border: 3px solid yellow; */
     font-size: 2.4rem;
     font-weight: bold;
     color: white;
@@ -285,7 +291,7 @@ article.card p {
     /* display: inline-flex; */
     text-align: center;
     /* margin-bottom: 30px; */
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 
@@ -307,7 +313,7 @@ article.card p {
 
 /* footer */
 .footer-part1{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 80%;
     align-items: flex-start;
     /* border-bottom: none; */
@@ -322,7 +328,7 @@ article.card p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 50px;
 
     color: grey;
@@ -347,8 +353,9 @@ article.card p {
 }
 
 .footer-icon{
+    border-top: 1px solid grey;
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 50px;
     margin: 0 auto;

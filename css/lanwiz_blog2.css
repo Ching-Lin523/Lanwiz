@@ -10,7 +10,7 @@ body{
    
 }
 .blog-cover{
-  border: 3px solid green;
+  /* border: 3px solid green; */
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -22,7 +22,7 @@ body{
   z-index: 1000;
   position: fixed;
   top: 0;
-   border: 1px solid red;
+   /* border: 1px solid red; */
   width: 100%;
   /* height: 8%; */
   display: flex;
@@ -34,8 +34,15 @@ margin: auto;
 margin-right: 50px;
 width: 60%;
 }
+
+
+.menu>ul>li.current-active>a{
+  color:#17ad99;
+}
+
+
 .menu li {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
  float: right;
   list-style: none;
   font-size: 16px;
@@ -77,6 +84,41 @@ width: 60%;
 
 
 
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.wrapper ul {
+  list-style: none;
+}
+
+.wrapper ul li {
+  text-align: center;
+}
+
+/* 箭頭屬性 */
+.nav-btn {
+  font-size: 32px;
+  position: absolute;
+  top: -14px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: rgb(138, 138, 138);
+}
+
+.prev-slide {
+  left: -66px;
+}
+
+.next-slide {
+  right: -66px;
+}
+
 
 .blog-cover>div.blog-cover-caption{
     position: absolute;
@@ -84,7 +126,7 @@ width: 60%;
     font-size: 24px;
     transform: translateY(-50%);
     text-align: center;
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -118,7 +160,7 @@ width: 60%;
     font-size: 24px;
     transform: translateY(-50%);
     text-align: center;
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -191,7 +233,7 @@ width: 60%;
   } */
 
   ul.waterfall{
-    border: solid 1px red;
+    /* border: solid 1px red; */
    width: 80%;
    text-align: center;
     margin: auto;
@@ -217,7 +259,11 @@ width: 60%;
   ul.waterfall>li img{
     max-width:100%;
   }
-
+  ul.waterfall>li>p{
+    letter-spacing: 0.8px;
+    text-align: left;
+    padding: 14px;
+  }
 
 
 .wrapper.style{
@@ -274,7 +320,7 @@ width: 60%;
   /* background-attachment: scroll; */
   width: 100%;
   text-align: center;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   color: white;
   background-image: url(../picture/people/twomen_laptop.jpg);
   background-size: cover;
@@ -285,11 +331,12 @@ width: 60%;
 
 .foot{
   padding: 0;
-  border: 8px solid green;
+  /* border: 8px solid green; */
   margin: auto;
 }
 .foot>h1.foot1{
-  border: 3px solid yellow;
+  padding: 30px;
+  /* border: 3px solid yellow; */
   font-size: 2.4rem;
   font-weight: bold;
   color: rgb(53, 52, 52);
@@ -306,7 +353,7 @@ width: 60%;
   /* display: inline-flex; */
   text-align: center;
   /* margin-bottom: 30px; */
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 
 
@@ -330,7 +377,7 @@ width: 60%;
 /* footer */
 
 .footer-part1{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 80%;
   align-items: flex-start;
   /* border-bottom: none; */
@@ -345,7 +392,7 @@ width: 60%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 50px;
 
   color: grey;
@@ -380,8 +427,9 @@ width: 60%;
 }
 
 .footer-icon{
+  border-top: 1px solid grey;
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* height: 50px; */
   margin: 0 auto;
   flex-direction: row;

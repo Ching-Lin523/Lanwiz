@@ -1,24 +1,29 @@
-const tabContent = document.querySelectorAll('.tabContainer');
-const tabs = document.querySelectorAll('#ul li');
+$(function () {
+    // tab 切換的
+    // var video, intro;
 
-document.addEventListener('DOMContentLoaded', () => {
-	for (let div of tabContent) div.style.display = 'none';
-	tabContent[0].style.display = 'block';
-});
+    var video = $('.ul').children('.videos');
+    var intro = $('.ul').children('.intro');
+    //第一個影片要出現
+    var _fs = $('.container').find('.tabContainer:first').css("display", "block");
 
-let tabActive = (e) => {
-	for (let tabName of tabs) tabName.classList.remove('is-active');
-	e.currentTarget.classList.add('is-active');
 
-	for (let i = 0; i < tabContent.length; i++) {
-		tabContent[i].setAttribute('data-id', i);
-		e.currentTarget.getAttribute('data-tabid') === tabContent[i].getAttribute('data-id')
-			? (tabContent[i].style.display = 'block')
-			: (tabContent[i].style.display = 'none');
-	}
-};
+    // video 的按鈕 底下內容要出現
+    video.on("click",function(e){
+      e.preventDefault();
+      var current_fs = $(this).parent().parent().parent();
+      var next_fs = $(this).parent().parent().parent();
+      current_fs.find('.tabContainer:first').css("display", "block");
+      next_fs.find('.tabContainer:last').css("display", "none");
+      
+    });
+    // Introduction 的按鈕 底下內容要出現
+    intro.on("click",function(e){
+      e.preventDefault();
+      var current_fs = $(this).parent().parent().parent();
+      var next_fs = $(this).parent().parent().parent();
+      current_fs.find('.tabContainer:first').css("display", "none");
+      next_fs.find('.tabContainer:last').css("display", "block");
+    });
 
-tabs.forEach((currentElement, index) => {
-	currentElement.setAttribute('data-tabid', index);
-	currentElement.addEventListener('click', tabActive);
-});
+  });

@@ -11,7 +11,7 @@ body{
 /* page1:  */
 
 .homepage_cover{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -36,7 +36,7 @@ body{
     z-index: 1000;
     position: fixed;
     top: 0;
-     border: 1px solid red;
+     /* border: 1px solid red; */
     width: 100%;
     /* height: 8%; */
     display: flex;
@@ -49,7 +49,7 @@ body{
   width: 60%;
 }
 .menu li {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
    float: right;
     list-style: none;
     font-size: 16px;
@@ -95,14 +95,14 @@ body{
 .homepage-content{
     width: 100%;
     height: 90%;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     position: absolute;
     top: 8%;
 }
 
 
 .homepage-native{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     position: absolute;
     width: 80%;
     height: 30%;
@@ -113,7 +113,7 @@ body{
 }
 
 .homepage-native>h1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* position: absolute;
      */
     font-size: 46px;
@@ -124,7 +124,7 @@ body{
 }
 
 .homepage-native>h2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* position: absolute; */
     font-size: 26px;
     line-height: 2;
@@ -135,13 +135,13 @@ body{
 
 
 .homepage-partners-slider-container{
-    border: 5px solid grey;
+    /* border: 5px solid grey; */
     /* width: 95%; */
     margin: 0 auto;
 
 }
 .homepage-partners-slider-container>h1 {
-    border: 10px solid red;
+    /* border: 10px solid red; */
     padding: 0 20px;
     margin: 30px 0;
     font-size: 40px;
@@ -169,7 +169,7 @@ body{
 }
 
 .homepage-partner-item a {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     position: relative;
     /* display: block; */
 }
@@ -181,7 +181,7 @@ body{
     /* visibility: visible; */
 }
 .homepage-partner-detail{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     position: absolute;
     bottom: -20px;
     right: -24px;
@@ -198,7 +198,7 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     /* left: 50%;
     transform: translateX(-50%); */
@@ -258,7 +258,7 @@ a {
 
 
 .how-it-work-page{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 100px auto;
     width: 980px;
 }
@@ -273,18 +273,18 @@ a {
 
 .how-it-work-page-content{
 
-    border: 4px solid red;;
+    /* border: 4px solid red; */
     margin: 50px 0 0;
 }
 .how-it-work-page-step{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     display: flex;
     width: 100%;
     margin: 0 auto 50px auto;
 }
 
 .how-it-work-page-step-img{
-    border:2px solid chartreuse;
+    /* border:2px solid chartreuse; */
 }
 
 .how-it-work-page-step-img>video{
@@ -296,12 +296,12 @@ a {
 }
 .how-it-work-page-step-explain {
     position: relative;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     padding: 0 90px;
 }
 
 .how-it-work-page-step-explain>h1{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     padding: 0 90px;
     margin: 80px 0 20px 0px;
     font-size: 20px;
@@ -332,7 +332,7 @@ a {
 /* page3:rwd-version */
 
 .how-it-work-page-rwd{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 100px auto;
     width: 980px;
 }
@@ -347,18 +347,18 @@ a {
 
 .how-it-work-page-content-rwd{
 
-    border: 4px solid red;;
+    /* border: 4px solid red;; */
     margin: 50px 0 0;
 }
 .how-it-work-page-step-rwd{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     display: flex;
     width: 100%;
     margin: 0 auto 50px auto;
 }
 
 .how-it-work-page-step-img-rwd{
-    border:2px solid chartreuse;
+    /* border:2px solid chartreuse; */
 }
 
 .how-it-work-page-step-img-rwd>video{
@@ -370,12 +370,12 @@ a {
 }
 .how-it-work-page-step-explain-rwd {
     position: relative;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     padding: 0 90px;
 }
 
 .how-it-work-page-step-explain-rwd>h1{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     padding: 0 90px;
     margin: 80px 0 20px 0px;
     font-size: 20px;
@@ -409,7 +409,7 @@ a {
     width: 80%;
 }
 .container>h1{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 30px 0;
     font-size: 40px;
     text-align: center;
@@ -473,6 +473,7 @@ a {
     margin: 0;
     }
     .testimonial .title{
+    /* border: 1px solid red; */
     display: block;
     text-align: center;
     font-size: 18px;
@@ -481,6 +482,7 @@ a {
     text-transform: capitalize;
     letter-spacing: 1px;
     margin: 0 0 5px 0;
+    width: initial;
     }
     .testimonial .post{
     display:  block;
@@ -528,7 +530,7 @@ a {
     background-attachment: scroll;
     width: 100%;
     text-align: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     color: white;
     background-image: url(../picture/1.jpg);
     background-size: cover;
@@ -539,11 +541,12 @@ a {
 
 .foot{
     padding: 0;
-    border: 8px solid green;
+    /* border: 8px solid green; */
     margin: auto;
 }
 .foot>h1.foot1{
-    border: 3px solid yellow;
+    padding: 30px;
+    /* border: 3px solid yellow; */
     font-size: 2.4rem;
     font-weight: bold;
     color: white;
@@ -559,7 +562,7 @@ a {
     /* display: inline-flex; */
     text-align: center;
     /* margin-bottom: 30px; */
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 
@@ -582,7 +585,7 @@ a {
 
 /* footer */
 .footer-part1{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 80%;
     align-items: flex-start;
     /* border-bottom: none; */
@@ -597,7 +600,7 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 50px;
 
     color: grey;
@@ -607,6 +610,7 @@ a {
 }
 .footer-language>h3{
     color: black;
+    width: initial;
 }
 .language-container>ul{
     margin: 0;
@@ -621,16 +625,17 @@ a {
 }
 
 .footer-icon{
+    border-top: 1px solid gray;
     display: flex;
-    border: 1px solid blue;
-    width: 10%;
-    height: 50px;
+    /* border: 1px solid blue; */
+    /* height: 50px; */
     margin: 0 auto;
     flex-direction: row;
-    align-items: flex-end;
-}
-.footer-icon img{
-    padding-right: 14px;
-
-}
+   justify-content: center;
+  }
+  .footer-icon img{
+    margin-top: 15px;
+    margin-right: 14px;
+  
+  }
 
