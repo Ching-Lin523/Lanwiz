@@ -463,6 +463,7 @@
         display: none;
     }
     .cards-left{
+      padding: 10px;
         width:100%;
     }
     div.pagination_block{

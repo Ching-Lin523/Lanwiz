@@ -305,11 +305,11 @@ select.custom_select{
   
   }
   .new-avatar-information p {
-      font-family: -apple-system;
-      font-size: 14px;
+      font-family: 'Comic Neue', cursive, -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+      font-size: 16px;
       font-weight: 300;
       line-height: 18px;
-      color: rgb(119, 119, 119);
+      color: rgb(0, 0, 0);
       /* text-transform: uppercase; */
   }
   .cards-right{
@@ -450,14 +450,14 @@ select.custom_select{
 
 
 .wrapper-style{
-    /* background-attachment: scroll; */
+    background-attachment: scroll;
     width: 100%;
     text-align: center;
     /* border: 2px solid blue; */
     color: white;
     background-image: url(../picture/people/man_laptop3.jpg);
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
 
 }
