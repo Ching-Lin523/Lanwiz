@@ -498,10 +498,13 @@
     .new-avatar-information>h1 {
         font-size: 18px;
     }
-    .flag>img{
+    .flag {
+      left: 50px;
+    }
+    .flag > img{
         width:32px;
         height: 24px;
-        left: 68%;
+        left: 30px;
     }
 }
 
